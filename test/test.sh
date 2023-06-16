@@ -1,4 +1,5 @@
 #!/bin/bash
+// this is just a comment 
 
 arg="${1}"
 
