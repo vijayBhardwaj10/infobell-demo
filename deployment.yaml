@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tomcat-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: privateapp
+  template:
+    metadata: 
+      name: private-reg
+      labels:
+        app: privateapp
+    spec:
+      containers:
+      - name: privateapp
+        image: vijaybhardwaj/infobell:v1
+        ports:
+        - containerPort: 8080
+      
+        
