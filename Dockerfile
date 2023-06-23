@@ -13,5 +13,5 @@ COPY docker/50x.html /var/lib/nginx/html/50x.html
 
 RUN chmod -R 755 /var/lib/nginx
 
-EXPOSE 8080
+EXPOSE 3000
 CMD ["/usr/sbin/nginx"]
